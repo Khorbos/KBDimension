@@ -1,0 +1,23 @@
+modLoader="javafml" #mandatory
+loaderVersion="[31,)" #mandatory
+issueTrackerURL="http://my.issue.tracker/" #optional
+[[mods]] #mandatory
+modId="kbdimension" #mandatory
+version="${file.jarVersion}" #mandatory
+displayName="kbdimension Mod" #mandatory
+authors="Khorbos" #optional
+description='''A new dimension, with new land of opportunities
+'''
+[[dependencies.kbdimension]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[31,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.kbdimension]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
