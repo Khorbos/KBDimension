@@ -1,5 +1,6 @@
 package com.khorbos.kbdimension;
 
+import com.khorbos.kbdimension.core.init.Registries;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -19,6 +20,8 @@ public class KBDimension
 
     public KBDimension() {
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        Registries.initRegistries(modEventBus);
     }
 
     private void setup(final FMLCommonSetupEvent event){}
